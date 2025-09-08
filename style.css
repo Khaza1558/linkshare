@@ -5,7 +5,7 @@ body {
     color: #333;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 100vh;
     margin: 0;
     padding: 20px;
@@ -20,22 +20,24 @@ body {
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: 30px;
+    font-size: 2.5em;
+    margin-bottom: 40px;
     color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* Category Grid Layout */
 .category-grid {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
 }
 
 .top-row-boxes {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 20px;
 }
 
 .category-box {
@@ -48,13 +50,17 @@ h1 {
     align-items: center;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    flex: 1; /* Makes the boxes in the top row take equal space */
-    min-height: 150px;
+    flex: 1;
+    min-height: 200px; /* Increased box size */
+    background-color: #a4a4a4; /* Gray color from the image */
+    color: #333;
+    font-weight: bold;
 }
 
 .full-width-box .category-box {
     width: 100%;
-    min-height: 150px;
+    min-height: 200px; /* Increased box size */
+    background-color: #a4a4a4; /* Gray color from the image */
 }
 
 .category-box:hover {
@@ -63,16 +69,15 @@ h1 {
 }
 
 .box-label {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #34495e;
+    font-size: 1.8em;
+    line-height: 1.4;
+    text-align: center;
 }
 
 /* Content View and back button */
 .content-view {
     width: 100%;
     background-color: #ffffff;
-    border: 1px solid #ddd;
     border-radius: 12px;
     padding: 20px;
     text-align: left;
